@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href=".//Assets/css.css">
+  
+  <script>function copyClipboard() {
+    var elm = document.getElementById("divClipboard");
+    // for Internet Explorer
+    if(document.body.createTextRange) {
+      var range = document.body.createTextRange();
+      range.moveToElementText(elm);
+      range.select();
+      document.execCommand("Copy");
+      alert("Copied div content to clipboard");
+    }
+    else if(window.getSelection) {
+      // other browsers
+  
+      var selection = window.getSelection();
+      var range = document.createRange();
+      range.selectNodeContents(elm);
+      selection.removeAllRanges();
+      selection.addRange(range);
+      document.execCommand("Copy");
+      alert("(copiado)Agora me adicione no Discord");
+    }
+  }</script>
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="header">
+      <a href="#SobreMim">Sobre mim</a></li>
+      <a href="#Habilidades">Habilidades</a></li>
+      <a href="#Trabalhos">Trabalhos</a></li>
+      <a href="#">Contato</a></li>
+  </div>
+
+  <div id="SobreMim" class="main">
+    <p>Sobre eu</p>
+  </div>
+  
+  <div class="SobreMim">
+    <p>Olá a todos, Eu sou <a>Vitor Alexandre</a> criador desse site. 
+    <br>
+    Sou aluno do 2° (Segundo) ano da <a id="Etec">Etec de Peruibe </a>. <a id="Melhor">(Vulgo melhor escola de Peruibe)</a>
+    <br><br>
+    Tenho uma historia um tanto quanto particular, antes de começar essa <a>Pandemia</a> eu era totalmente diferente do que sou hoje, eu não tinha perspectiva de futuro, não tinha diciplina e nem consistencia. Logo no começo da pandemia, no meu aniversario de 14 anos eu decidi mudar de vida, Mas como eu faria isso?
+    <Br>
+    Eu começei a malhar, E isso mudou minha vida para <a>Sempre</a>. A partir daquele dia eu venho sendo minha melhor verção de mim mesmo a cada dia. Com o Judo, Academia e trabalho eu obitive:
+    <ul class="coisas">
+      <li>Maturidade.</li>
+      <li>Estabilidade financeira.</li>
+      <li>Um Shape de dar inveja.</li>
+      <li>E muito mais.</li>
+    </ul>
+  </p>
+  </div>
+
+  <div id="Habilidades" class="main">
+    <p>Habilidades</p>
+</div>
+
+<br>
+
+  <div  class="habilidades">
+    <p>Css</p>
+    <img src=".//Imagens/slider.png" alt="">
+      <br><br>
+    <p>Html</p>
+    <img src=".//Imagens/SliderHtml.png" alt="">
+      <br><br>
+    <p>C#</p>
+    <img src=".//Imagens/sliderCu.png" alt="">
+      <br><br>
+    <p>Js</p> 
+    <img src=".//Imagens/sliderJs.png" alt="">
+      <br><br>
+    <p>Lol</p>
+    <img src=".//Imagens/sliderLol.png" alt="">
+      <br><br>
+    <p id="R6">Rainbow Six</p>
+    <img src=".//Imagens/sliderR6.png" alt="">
+      <br><br>
+    <p id="roblox">Roblox</p>
+    <img src=".//Imagens/sliderLol.png" alt="">
+      <br><br>
+    <p id="R6">Academia</p>
+    <img src=".//Imagens/sliderR6.png" alt="">
+      <br><br>
+    <p id="gestao">Gestãor de Marketing</p>
+    <img src=".//Imagens/sliderCu.png" alt="">
+  </div>
+
+  <div id="Trabalhos" class="main">
+    <p>Trabalhos</p>
+</div>
+  
+<div class="trabalhos">
+  <p>Site informativo sobre planetas:</p> <br>
+  <img src=".//Imagens/PlanetasTrabalho.png" alt="">
+    <br><br>
+  <p>Logo de um time:</p> <br>
+  <img id="logoTime" src=".//Imagens/TrabalhoLogo.jfif" alt="">
+</div>
+
+<div class="footer" id="footer">
+  <a id="Disc" href="#footer"><img src=".//Imagens/DiscordIcon.png" alt="" onclick="copyToClipboard()"></a> <p id="disc">VIT0R#0708</p>
+  <a href="https://www.facebook.com/profile.php?id=100018151060412"><img src=".//Imagens/FacebookIcon.png" alt=""></a>
+  <a href="https://www.instagram.com/vitor3doficial/"><img src=".//Imagens/InstaIcon.png" alt=""></a>
+  <a href="https://api.whatsapp.com/send?phone=5513997401864&text=Oi%20mano%20vim%20pelo%20site"><img src=".//Imagens/ZapIcon.png" alt=""></a>
+</div>
+
+<script> 
+  function copyToClipboard() {  
+ const el = document.createElement('textarea');
+ el.value = 'vitor3D#0708';
+ el.setAttribute('readonly', '');
+ el.style.position = 'absolute';
+ el.style.left = '-9999px';
+document.body.appendChild(el);
+el.select();
+document.execCommand('copy');
+document.body.removeChild(el);
+alert("Copiado, 'vitor3D#0708'");
+  };
+</script>
+</body>
+</html>

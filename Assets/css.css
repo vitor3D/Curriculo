@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Work+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+
+:root{
+  --primarColor: rgb(255, 86, 24);
+  --primarColorTransparente:rgba(255, 86, 24, 0.945);
+  --secunColor: #a59b95;
+  --tersColor: #1f1c20;
+  --backgroundColor: #faf9f8;
+}
+
+::-webkit-scrollbar {
+  width:10px;
+  height: 10px;
+
+  background: var(--tersColor);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--primarColor);
+    }
+
+*{
+  margin: 0px;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+
+  font-family:'Poppins', sans-serif;
+
+  color: black;
+}
+
+body{
+  background:var(--backgroundColor);
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.header{
+ width: 100%;
+ height: 30px;
+
+ background: var(--primarColorTransparente);
+}
+.header a{
+  padding-left: 20px;
+  margin-top: 5px;
+
+  font-size: 17px;
+}
+.header a:hover{
+
+  color: white;
+
+  transition: 0.3s;
+}
+@media screen and (max-width:550px){
+  .header a{
+    padding-left: 10px;
+    margin-top: 5px;
+  
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width:392px){
+  .header{
+    width: 100%;
+    height: 60px; 
+   }
+
+  .header a{
+    padding-left: 10px;
+    margin-top: 7px;
+  
+    font-size: 17px;
+  }
+}
+.main{
+  top: 50px;
+  
+  position: relative;
+  text-align: center;
+ 
+  color: var(--primarColor);
+  font-size: 50px;
+  font-family:'Work Sans', sans-serif ;
+
+  z-index: 1;
+}
+
+@media screen and (max-width:600px){
+ .main{
+  top: 20px;
+ } 
+}
+
+.SobreMim{
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-family:'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.SobreMim a{
+  font-size: 23px;
+
+  color: var(--primarColor);
+  
+}
+#Melhor{
+  display: none;
+}
+#Etec:hover + #Melhor{
+  
+ display: block;
+
+ color: black;
+ font-size: 15px;
+}
+
+
+@media screen and (max-width:480px){
+ .SobreMim{
+  margin-right: 10px;
+ }
+}
+
+.coisas{
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+.habilidades{
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-family:'Poppins', sans-serif;
+  font-size: 20px;
+  
+}
+
+.habilidades p{
+  margin-left: 250px;
+ 
+  font-family:'Poppins', sans-serif;
+  font-size: 35px;
+}
+
+.habilidades img{
+  max-width:500px;
+  max-height:450px;
+  width: auto;
+  height: auto;
+  margin-left: 40px;
+
+}
+
+.habilidades a{
+  font-size: 23px;
+
+  color: var(--primarColor);
+  
+}
+
+.habilidades #R6{
+  margin-left: 170px;
+}
+
+.habilidades #roblox{
+  margin-left: 220px;
+}
+.habilidades #gestao{
+  margin-left: 100px;
+}
+@media screen and (max-width:570px){
+  .habilidades{
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  
+    font-family:'Poppins', sans-serif;
+    font-size: 10px;
+    
+  }
+
+  .habilidades img{
+    max-width:400px;
+    max-height:350px;
+    width: auto;
+    height: auto;
+    margin-left: 70px;
+  
+  }
+
+}
+
+.trabalhos{
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-family:'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.trabalhos p{
+  margin-left: 50px;
+ 
+  font-family:'Poppins', sans-serif;
+  font-size: 25px;
+}
+
+.trabalhos img{
+  max-width:800px;
+  max-height:750px;
+  width: auto;
+  height: auto;
+
+  margin-left: 40px;
+
+}
+
+.trabalhos #logoTime{
+  max-width:600px;
+  max-height:550px;
+  width: auto;
+  height: auto;
+
+  margin-left: 200px;
+}
+
+@media screen and (min-width:570px){
+  .main{
+    top: 50px;
+    border-right: 500px;
+   
+    color: var(--primarColor);
+    font-size: 50px;
+    font-family:'Work Sans', sans-serif ;
+  
+    z-index: 1;
+  }
+}
+.footer{
+  background: var(--primarColor);
+  width: 100%;
+}
+
+.footer img{
+  max-width:70px;
+  max-height:35px;
+  width: auto;
+  height: auto;
+
+  
+  padding: 10px;
+}
+
+#disc{
+  display: none;
+}
+#Disc:hover + #disc{
+  display: none;
+  color: white;
+  float: left;
+  position: relative;
+}
+
